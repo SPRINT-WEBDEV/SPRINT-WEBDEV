@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="./img/logo (2).png" alt="Mahindra Formula E Team Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="time.html">TIME</a></li>
+                <li><a href="calendario.html">CALENDARIO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="image-section">
+                <img src="./img/icone-fale-removebg-preview.png" alt="Two women">
+            </div>
+            <div class="form-section">
+                <h1>Fale conosco</h1>
+                <form id="contato-form" onsubmit=" envioContato(event)">
+                    <label for="full-name">Nome completo</label>
+                    <input type="text" id="full-name" name="full-name">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="contact-info">
+                    <p>Contato</p>
+                    <a href="mailto:hi@fashion.com">mahindra@gmail.com</a>
+                    <p>Base local</p>
+                    <p>São Francisco, California</p>
+                    <div class="social-media">
+                        <a href="https://web.facebook.com/MahindraRacing/?_rdc=1&_rdr"><img src="./img/face.jpeg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/mahindraracing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="./img/instagram-6338393_1280.webp" alt="Instagram"></a>
+                        <a href="https://x.com/mahindraracing"><img src="./img/tt.jpeg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
