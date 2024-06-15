@@ -1,0 +1,686 @@
+:root{
+    --color-1: rgb(101, 135, 236);
+    --color-2: white;
+    --color-3: blue;
+    --color-4:red;
+}
+
+
+
+/* Define estilos gerais para o body, incluindo margens, padding, fonte, cor de fundo e cor do texto */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/f1-monza-parabolica-italia-700.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: var(--color-2);
+    font-family: system-ui; /* Fonte personalizada */
+    min-height: 100vh;
+}
+
+/* Estilos para o header, incluindo exibição flexível, espaçamento e alinhamento */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para a logo dentro do header, incluindo transformação e posicionamento */
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    background:var(--color-1);
+    transform: scale(); /* Sem escala definida */
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    position: relative;
+    left: -2.09rem;
+}
+.logo img {    
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 5;
+    margin-top: 0;
+}
+
+/* Estilos para a lista de navegação, removendo marcadores e definindo exibição flexível */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilos para os links da navegação */
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-2);
+    font-size: 18px;
+}
+
+/* Estilos para o main, incluindo exibição flexível e centralização de conteúdo */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos para a seção de boas-vindas */
+.welcome {
+    max-width: 40%;
+    background-color: var(--color-1);
+    border-radius:40px ;
+    opacity: 0.9;
+    padding: 10px;
+}
+
+/* Estilos para o título na seção de boas-vindas */
+.welcome h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--color-2);
+    opacity: 2;
+}
+
+/* Estilos para o parágrafo na seção de boas-vindas */
+.welcome p {
+    font-size: 18px;
+    line-height: 1.5;
+    color:var(--color-2);
+}
+
+/* Estilos para o botão de próxima página */
+.next-page {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Estilos para a imagem do carro */
+#car-image {
+    display: flex;
+    margin-top: 200px;
+}
+
+#car-image img {
+    margin-top: 40px;
+    width: 600px;
+    height: 400px;
+    filter: drop-shadow(0 0 10px white);
+    display: none;
+}
+
+/* Estilos para a seção de texto da equipe */
+.text-team {
+    text-align: left;
+    margin: 20px 20px 0 20px;
+}
+
+.text-team h1 {
+    font-size: 32px;
+    color:var(--color-2);
+}
+
+/* Estilos para a seção de corredores */
+.corredores {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilos para os cartões dos corredores */
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    text-align: center;
+    margin: 10px;
+    width: 600px;
+}
+
+/* Estilos para o efeito de hover nos cartões */
+.card::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 40%;
+    content: 'Lorem ipsum dolor sit amet consectetur. Ipsum amet molestie diam eget. In mi ornare gravida at orci gravida amet. Sit sed volutpat nunc amet cursus nunc. Amet tellus eget consectetur urna neque pretium.';
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/* Estilos para o efeito de hover nos cartões */
+.card:hover::before {
+    transform: translateY(0%);
+    background-color: #333;
+    height: 900px;
+    opacity: 1;
+}
+
+/* Estilos para os links dentro dos cartões */
+.card a {
+    text-decoration: none;
+}
+
+/* Estilos para as imagens dentro dos cartões */
+.card img {
+    width: 500PX;
+    height: 800PX;
+    border-radius: 10px;
+}
+
+/* Estilos para os parágrafos dentro dos cartões */
+
+
+/* Estilos para os links dentro dos parágrafos nos cartões */
+.card p a {
+    text-decoration: none;
+    color: white;
+}
+#mahindra{
+    background-color: var(--color-4);
+    padding: 10px;
+    border-radius: 20px;
+}
+.mahindra-1{
+    font-size: 18px;
+    background-color:var(--color-4);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#ABT{
+    background-color: #194997;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ABT-1{
+    font-size: 18px;
+    background-color: #194997;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#ANDRETTI{
+    background-color: #ed3124;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ANDRETTI-1{
+    font-size: 18px;
+    background-color: #ed3124;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#PENSKE{
+    background-color: #cba65f;
+    padding: 10px;
+    border-radius: 20px;
+}
+.PENSKE-1{
+    font-size: 18px;
+    background-color: #cba65f;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#ENVISION{
+    background-color: #00be26;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ENVISION-1{
+    font-size: 18px;
+    background-color: #00be26;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#ERT{
+    background-color: #3c3c3c;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ERT-1{
+    font-size: 18px;
+    background-color: #3c3c3c;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#TCS{
+    background-color: #000;
+    padding: 10px;
+    border-radius: 20px;
+}
+.TCS-1{
+    font-size: 18px;
+    background-color: #000;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#MSG{
+    background-color: #001489;
+    padding: 10px;
+    border-radius: 20px;
+}
+.MSG-1{
+    font-size: 18px;
+    background-color: #001489;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#NEOM{
+    background-color: #ff8000;
+    padding: 10px;
+    border-radius: 20px;
+}
+.NEOM-1{
+    font-size: 18px;
+    background-color: #ff8000;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#NISSAN{
+    background-color: #c3002f;
+    padding: 10px;
+    border-radius: 20px;
+}
+.NISSAN-1{
+    font-size: 18px;
+    background-color: #c3002f;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+}
+/* Estilos para a seção de corridas */
+.corridas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para os cartões de calendário */
+.card-calendarios {
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    font-size: 23px;
+    width: 500px;
+    height: auto;
+}
+
+/* Estilos para o efeito de hover nos cartões de calendário */
+.card-calendarios:hover {
+    background-color: var(--color-3);
+    transform: scale(1.1);
+}
+
+/* Estilos para as imagens nos cartões de calendário */
+.card-calendarios img {
+    width: 400px;
+    padding: 10px;
+}
+
+/* Estilos para a seção de localização */
+.lugar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/* Estilos para as imagens na seção de localização */
+.lugar img {
+    width: 60px;
+}
+
+/* Estilos para a seção de login */
+.loginn {
+    background-color: var(--color-3);
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 10px #1100ff);
+}
+
+/* Estilos para os rótulos e inputs na seção de login */
+.loginn label, .loginn input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os inputs e botões na seção de login */
+.loginn input, .loginn button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para os botões na seção de login */
+.loginn button {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    align-self: center;
+    background-color: #000000;
+    color: white;
+    border-radius: 13px;
+}
+
+/* Estilos para a seção de contato */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+    background-color: var(--color-1);
+    border-radius: 50px;
+}
+
+/* Estilos para a seção de imagem na seção de contato */
+.image-section {
+    flex: 1;
+}
+
+/* Estilos para as imagens na seção de imagem */
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para a seção de formulário na seção de contato */
+.form-section {
+    flex: 1;
+    background-color:var(--color-3);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* Estilos para o título na seção de formulário */
+.form-section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Estilos para o formulário na seção de formulário */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para os rótulos na seção de formulário */
+.form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para os inputs e textarea na seção de formulário */
+.form-section input,
+.form-section textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para o textarea na seção de formulário */
+.form-section textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Estilos para os botões na seção de formulário */
+.form-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para o efeito de hover nos botões na seção de formulário */
+.form-section button:hover {
+    background-color: #333333;
+}
+
+/* Estilos para a seção de informações de contato */
+.contact-info {
+    margin-top: 20px;
+}
+
+/* Estilos para os parágrafos na seção de informações de contato */
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilos para os links na seção de informações de contato */
+.contact-info a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Estilos para o efeito de hover nos links na seção de informações de contato */
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a seção de mídia social */
+.social-media {
+    margin-top: 10px;
+}
+
+/* Estilos para os links de mídia social */
+.social-media a {
+    margin-right: 10px;
+}
+
+/* Estilos para as imagens de mídia social */
+.social-media img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos para o cartão principal */
+.card-principal {
+    background-color:var(--color-3);
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    filter: drop-shadow(0 0 10px var(--color-1));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos para as imagens no cartão principal */
+.card-principal img {
+    width: 300px;
+    filter: drop-shadow(0 0 10px var(--color-1));
+    border-radius: 30px;
+    height: 300px;
+}
+
+/* Estilos para os botões no cartão principal */
+.card-principal button {
+    align-self: center;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+.container-news{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card-news{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-1);
+    border-radius: 40px;
+    opacity: 0.9;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.card-news p{
+    font-size: large;
+    width: 400px;
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    text-align: justify;
+}
+#prev-btn{
+    border: #000 solid;
+    margin: 20px;
+}
+#next-btn{
+    border: #000 solid;
+    margin: 20px;
+}
+.news-content {
+    margin-bottom: 20px;
+}
+
+.news-content img {
+    border: #000 solid;
+    width: 800px;
+    height: 600px;
+    border-radius: 8px;
+    margin: 20px 0;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    padding: 20px;
+}
+
+.buttons button {
+    color: #000;
+    padding: 20px;
+    align-self: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+footer{
+    background-color: var(--color-3);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+footer p{
+    margin: auto;
+    padding: 3px;
+}
