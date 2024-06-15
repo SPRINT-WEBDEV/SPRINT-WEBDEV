@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body{
+            height: 100vh;
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="./img/logo (2).png" alt="Mahindra Formula E Team Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="time.html">TIME</a></li>
+                <li><a href="calendario.html">CALENDARIO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="loginn">
+            <h3 class="titulo-login">ACESSE SUA CONTA</h3>
+            <form id="loginForm" onsubmit=" validateLogin()">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username">
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
